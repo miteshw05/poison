@@ -4,6 +4,8 @@
 steps to download and run the script :-
 
 steps:- copy and paste this in your terminal 
+
+
 git clone https://github.com/miteshw05/poison.git
 
 cd poison 
