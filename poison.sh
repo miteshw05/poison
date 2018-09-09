@@ -11,7 +11,9 @@ echo "Give me the listening port(lport)"
 read p
 echo "What should be the name of your file??"
 read n
-echo "okay!! give me a second"
+name=$1
+set 'who am i'
+echo "okay!! $name give me a second"
 gnome-terminal -x ssh -R $p:localhost:$p serveo.net
 if [ $o=='android' ]
  then
