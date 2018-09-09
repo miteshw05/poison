@@ -7,7 +7,7 @@ echo -n  "      __               , _
  |/ \_|    ||   /  \/  \_|   |  
  |__/  \__/ |_//(__/\__/ |   |_/
 /|                              
-\|   The Simple WAN Payload Generator"
+\|   The Simple WAN Payload Generator for Noobs by a Noob"
 sleep 3
 echo -n -e "\r${clr2eol}////////////******SCRIPT BY******//////////"
 sleep 3
