@@ -1,5 +1,10 @@
 # poison
- This is a simple payload generator using msfvenom and serveo.net
+ Hello Noobs , this is a simple script for you from a noob:)
+ Q.What can this script do???
+ --> Well, this Script is designed for automated payload generation using Msfvenom and Serveo.net
+ Q.What else can it do???
+ -->Ever thought that your ip will be traced back while you perform Port forwarding, I guess you are right!!!
+    So, to prevent this script is included with one more option as 'Hide My IP'.
 
 steps to download and run the script :-
 
@@ -19,3 +24,4 @@ chmod 777 poison.sh.x
 enter THERE WE ARE ahead of that and press enter 
 
 enjoy the script , for reporting any issues and suggestions , mail me at miteshw05@gmail.com
+
