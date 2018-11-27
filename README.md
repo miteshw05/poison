@@ -17,9 +17,9 @@ git clone https://github.com/miteshw05/poison.git
 
 cd poison 
 
-chmod 777 poison.sh.x
+chmod 777 poison.sh
 
-./poison.sh.x
+./poison.sh
  
  The Script will pause while ///////////********VISIT GITHUB.COM/MITESHW05/POISON********//////
 
