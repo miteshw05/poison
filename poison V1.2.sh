@@ -7,7 +7,7 @@ echo -n  "      __               , _
  |/ \_|    ||   /  \/  \_|   |  
  |__/  \__/ |_//(__/\__/ |   |_/
 /|                              
-\|   The Simple WAN Payload Generator for Noobs by a Noob"
+\|   -------------------------------------!!!!!!!!!!!!Hacking Made Simple!!!!!!!!!!!!!!!!!!!!-------------------------------------------------------"
 sleep 3
 echo -n -e "\r${clr2eol}////////////******SCRIPT BY******//////////"
 sleep 3
@@ -21,16 +21,6 @@ echo -n -e "\r${clr2eol}////////////******FOR ANY ISSUES AND REPORTS******///// 
 sleep 3
 echo -n -e "\r${clr2eol}///////////********VISIT GITHUB.COM/MITESHW05/POISON********//////"
 sleep 4
-ACTUAL="THERE WE ARE"
-read pass
-if [ "$pass" != "$ACTUAL" ]
- then 
- echo "Sorry!! Please check the password again or else contact me on miteshw05@gmail.com"
- exit 
- else
- echo "Amazing, Password is correct!!!!"
-fi
-sleep 3
 echo -n -e "\r${clr2eol}///////////********CHECKING FOR FILES********//////"
 sleep 2
  if [ -d "ngrok-linux-stable-amd64" ]
