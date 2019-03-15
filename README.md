@@ -1,29 +1,18 @@
-# poison
- Hello Noobs , this is a simple script for you from a noob:)
+# pOiSoN:- Hacking Made Simple
+Update V1.2:- 
+Added Auto-Update Functionality 
+
+Update V1.1:-
+Added Steganography Tool
  
- Q.What can this script do???
- --> Well, this Script is designed for automated payload generation using Msfvenom and Serveo.net
- 
- Q.What else can it do???
- -->Ever thought that your ip will be traced back while you perform Port forwarding, I guess you are right!!!
-    So, to prevent this script is included with one more option as 'Hide My IP'.
 
-steps to download and run the script :-
+Steps to download and run the script :-
 
-steps:- copy and paste this in your terminal 
+1. git clone https://github.com/miteshw05/poison.git
 
+2. cd poison 
 
-git clone https://github.com/miteshw05/poison.git
+3. chmod 777 poison.sh
 
-cd poison 
-
-chmod 777 poison.sh
-
-./poison.sh
- 
- The Script will pause while ///////////********VISIT GITHUB.COM/MITESHW05/POISON********//////
-
-enter THERE WE ARE ahead of that and press enter 
-
-enjoy the script , for reporting any issues and suggestions , mail me at miteshw05@gmail.com
+4. ./'poison V1.2.sh'
 
