@@ -1,4 +1,5 @@
 # pOiSoN:- Hacking Made Simple
+##Automate Many Hacking Tasks through a simple bash script.
 Update V1.2:- 
 Added Auto-Update Functionality 
 
