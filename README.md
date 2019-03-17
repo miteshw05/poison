@@ -1,5 +1,10 @@
 # pOiSoN:- Hacking Made Simple
 ##Automate Many Hacking Tasks through a simple bash script.
+
+Update V1.3:-
+Added DOS Tool
+Resolved few Bugs
+
 Update V1.2:- 
 Added Auto-Update Functionality 
 
@@ -15,5 +20,5 @@ Steps to download and run the script :-
 
 3. chmod 777 poison.sh
 
-4. ./'poison V1.2.sh'
+4. ./'poison V1.3.sh'
 
