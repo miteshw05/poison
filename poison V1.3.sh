@@ -286,7 +286,7 @@ if [ $? -eq 0 ];
 	sleep 2
 	echo "New Update Available,Installing it now"
 	 cd
-	rmdir /root/poison
+	rm -r /root/poison
 	git clone https://github.com/miteshw05/poison
 	cd poison
 	chmod +x 'poison V1.4.sh'
